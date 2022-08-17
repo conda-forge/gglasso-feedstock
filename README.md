@@ -152,4 +152,6 @@ Feedstock Maintainers
 =====================
 
 * [@Vlasovets](https://github.com/Vlasovets/)
+* [@fabian-sp](https://github.com/fabian-sp)
+* [@muellsen](https://github.com/muellsen)
 
