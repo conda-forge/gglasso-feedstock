@@ -1,11 +1,11 @@
-About gglasso
-=============
+About gglasso-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gglasso-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/fabian-sp/GGLasso
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gglasso-feedstock/blob/main/LICENSE.txt)
 
 Summary: Algorithms for Single and Multiple Graphical Lasso problems.
 
@@ -152,6 +152,4 @@ Feedstock Maintainers
 =====================
 
 * [@Vlasovets](https://github.com/Vlasovets/)
-* [@fabian-sp](https://github.com/fabian-sp)
-* [@muellsen](https://github.com/muellsen)
 
