@@ -1,5 +1,5 @@
 {% set name = "gglasso" %}
-{% set version = "0.1.9" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 24145434a983c7fc844a4483a2613800fb23718e178565e0e855236e2384957e
+  sha256: 104acc70d6de5341f8d2156b2cbc16cca54bb3dcec18b0ec6780a87c2684d9f8
 
 build:
   noarch: python
