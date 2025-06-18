@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 104acc70d6de5341f8d2156b2cbc16cca54bb3dcec18b0ec6780a87c2684d9f8
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy >=1.17.3
     - scipy >=0.11.0
     - scikit-learn >=0.24.1
@@ -37,6 +37,7 @@ test:
     - gglasso
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
