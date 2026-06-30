@@ -11,14 +11,14 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-build-isolation
   number: 0
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - hatchling
 
   run:
     - python >={{ python_min }}
@@ -30,7 +30,6 @@ requirements:
     - matplotlib-base
     - seaborn
     - networkx
-    - regain
 
 test:
   imports:
