@@ -1,5 +1,5 @@
 {% set name = "gglasso" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,18 +7,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 104acc70d6de5341f8d2156b2cbc16cca54bb3dcec18b0ec6780a87c2684d9f8
+  sha256: 674839e6e52b02d596e7b7ab96a5457624114f162d38cf4986bc1c0f9e111dbe
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  script: {{ PYTHON }} -m pip install . -vv --no-build-isolation
+  number: 0
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - hatchling
 
   run:
     - python >={{ python_min }}
@@ -30,7 +30,6 @@ requirements:
     - matplotlib-base
     - seaborn
     - networkx
-    - regain
 
 test:
   imports:
