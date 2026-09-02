@@ -1,13 +1,13 @@
 {% set name = "gglasso" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 674839e6e52b02d596e7b7ab96a5457624114f162d38cf4986bc1c0f9e111dbe
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8b1a65175e8430babb61f24d3fd58ff87f97920ef1093655a91c3bc67976d557
 
 build:
   noarch: python
